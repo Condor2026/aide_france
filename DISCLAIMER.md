@@ -1,7 +1,7 @@
 # 🗼 AVISO LEGAL Y ÉTICO - DIABOLIC FRANCIA 🗼
 
 ## 1. PROPÓSITO DE LA HERRAMIENTA
-DIABOLIC Francia es una herramienta OSINT (Open Source Intelligence) de código abierto diseñada para **analizar noticias públicas** procedentes de periódicos digitales de Francia y detectar **patrones delictivos** (robos, estafas, narcotráfico, violencia, etc.) con fines de:
+aide_france es una herramienta OSINT (Open Source Intelligence) de código abierto diseñada para **analizar noticias públicas** procedentes de periódicos digitales de Francia y detectar **patrones delictivos** (robos, estafas, narcotráfico, violencia, etc.) con fines de:
 
 - Periodismo de datos e investigación.
 - Estudios criminológicos y sociológicos.
@@ -20,7 +20,7 @@ DIABOLIC Francia es una herramienta OSINT (Open Source Intelligence) de código 
 - Los datos mostrados proceden de **fuentes públicas** (periódicos digitales) y su exactitud depende de dichas fuentes. El usuario debe contrastar la información antes de tomar decisiones basadas en ella.
 
 ## 3. PROTECCIÓN DE DATOS (RGPD)
-- DIABOLIC Francia **no almacena ni procesa datos personales** (nombres, direcciones, DNI, números de teléfono, direcciones IP, cookies, etc.).
+- aide_france **no almacena ni procesa datos personales** (nombres, direcciones, DNI, números de teléfono, direcciones IP, cookies, etc.).
 - Únicamente guarda, de forma local en el dispositivo del usuario, metadatos como: titular de la noticia, fecha de publicación, ubicación geográfica aproximada (región o departamento), tipo de delito y fuente.
 - Al no tratar datos personales, la herramienta queda **fuera del ámbito de aplicación del Reglamento General de Protección de Datos (RGPD)**.
 
