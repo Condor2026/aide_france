@@ -572,14 +572,14 @@ aide-france/
 ├── 🐳 Dockerfile                  # Build Docker
 ├── 📄 docker-compose.yml          # Orchestration Docker
 │
-├── 📊 aide-france_data.json       # Base de données des avis
-├── 💾 aide-france_backup.json     # Sauvegarde automatique
+├── 📊 aide_france_data.json       # Base de données des avis
+├── 💾 aide_france_backup.json     # Sauvegarde automatique
 ├── 🗺️ url_cache_france.json       # Cache URLs découvertes
 ├── 📡 etat_sources_france.json    # État de chaque source
 │
 ├── 📤 aide-france_export.json     # Export manuel (JSON)
-├── 📤 aide-france_export.csv      # Export manuel (CSV)
-├── 📤 aide-france_report.html     # Export manuel (HTML)
+├── 📤 aide_france_export.csv      # Export manuel (CSV)
+├── 📤 aide_france_report.html     # Export manuel (HTML)
 │
 ├── 📁 docs/                       # Documentation supplémentaire
 │   ├── usage.md
@@ -597,10 +597,10 @@ aide-france/
 
 | Fichier | Création | Contenu |
 |---------|----------|---------|
-| `aide-france_data.json` | 1ère exécution | Tous les avis stockés |
+| `aide_france_data.json` | 1ère exécution | Tous les avis stockés |
 | `url_cache_france.json` | Auto-discovery | URLs alternatives trouvées |
 | `etat_sources_france.json` | Option 8 | État sources (actif/inactif) |
-| `aide-france_backup.json` | Chaque sauvegarde | Copie automatique |
+| `aide_france_backup.json` | Chaque sauvegarde | Copie automatique |
 
 ---
 
@@ -685,13 +685,13 @@ echo '{"avisos": [], "ultima_actualizacion": null}' > aide_france_data.json
 crontab -e
 
 # Ajouter ligne (exécute à 8h)
-0 8 * * * cd /chemin/aide-france && python3 aide_france.py -auto
+0 8 * * * cd /chemin/aide-france && python3 aide-france.py -auto
 ```
 
 **Windows (Planificateur de tâches):**
 - Créer tâche basique
 - Déclencheur: Quotidien 8h00
-- Action: `python C:\chemin\aide-france\aide_france.py`
+- Action: `python C:\chemin\aide-france\aide-france.py`
 
 ### ❓ Les données sont-elles en temps réel?
 
@@ -703,7 +703,7 @@ crontab -e
 
 ### ❓ Puis-je ajouter mes propres sources?
 
-**Oui.** Éditez la liste `FUENTES_BASE` dans `aide_france.py`:
+**Oui.** Éditez la liste `FUENTES_BASE` dans `aide-france.py`:
 
 ```python
 {
