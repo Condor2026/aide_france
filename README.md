@@ -562,7 +562,7 @@ Quand vous lancez l'**Option 5**, un serveur web démarre sur `http://localhost:
 ```
 aide-france/
 │
-├── 📄 aide_france.py              # Script principal (2000+ lignes)
+├── 📄 aide-france.py              # Script principal (2000+ lignes)
 ├── 📄 requirements.txt            # Dépendances Python
 ├── 📄 README.md                   # Ce document
 ├── 📄 LICENSE                     # GPL v3
@@ -572,14 +572,14 @@ aide-france/
 ├── 🐳 Dockerfile                  # Build Docker
 ├── 📄 docker-compose.yml          # Orchestration Docker
 │
-├── 📊 aide_france_data.json       # Base de données des avis
-├── 💾 aide_france_backup.json     # Sauvegarde automatique
+├── 📊 aide-france_data.json       # Base de données des avis
+├── 💾 aide-france_backup.json     # Sauvegarde automatique
 ├── 🗺️ url_cache_france.json       # Cache URLs découvertes
 ├── 📡 etat_sources_france.json    # État de chaque source
 │
-├── 📤 aide_france_export.json     # Export manuel (JSON)
-├── 📤 aide_france_export.csv      # Export manuel (CSV)
-├── 📤 aide_france_report.html     # Export manuel (HTML)
+├── 📤 aide-france_export.json     # Export manuel (JSON)
+├── 📤 aide-france_export.csv      # Export manuel (CSV)
+├── 📤 aide-france_report.html     # Export manuel (HTML)
 │
 ├── 📁 docs/                       # Documentation supplémentaire
 │   ├── usage.md
@@ -597,10 +597,10 @@ aide-france/
 
 | Fichier | Création | Contenu |
 |---------|----------|---------|
-| `aide_france_data.json` | 1ère exécution | Tous les avis stockés |
+| `aide-france_data.json` | 1ère exécution | Tous les avis stockés |
 | `url_cache_france.json` | Auto-discovery | URLs alternatives trouvées |
 | `etat_sources_france.json` | Option 8 | État sources (actif/inactif) |
-| `aide_france_backup.json` | Chaque sauvegarde | Copie automatique |
+| `aide-france_backup.json` | Chaque sauvegarde | Copie automatique |
 
 ---
 
@@ -734,7 +734,7 @@ crontab -e
 
 ### ❓ Où sont stockées les données?
 
-Dans `aide_france_data.json` (format JSON lisible)
+Dans `aide-france_data.json` (format JSON lisible)
 
 ### ❓ Puis-je exporter les données?
 
